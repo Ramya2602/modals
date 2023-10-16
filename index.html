@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="top-head">
+        Click Here to touch the models👇
+    </h1>
+   <div class="container">
+    
+    <button type="submit" class="btn" onclick="openPopup()">Show model 1️⃣</button>
+    <button type="submit" class="btn" onclick="openPopupOne()">Show model 2️⃣</button>
+    <button type="submit" class="btn" onclick="openPopupTwo()">Show model 3️⃣</button>
+    <div class="popup" id="popup">
+        <h1 class="head"> Model 1 😍</h1>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nisi nobis ut reiciendis, minus ab. Eveniet, consequuntur in. Animi exercitationem corrupti voluptatum similique culpa facere beatae mollitia quaerat voluptatibus sapiente adipisci in soluta aliquam, officiis autem et sint labore dicta dolor libero laborum molestiae? Nihil sapiente eos itaque modi delectus!</p>
+        <button type="button"   class="btnOne"onclick="closepopup()"> <b>Close</b></button>
+    </div>
+    <div class="popupOne" id="popupOne"> 
+        <h1 class="head"> Model 2 😍</h1>
+         <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nisi nobis ut reiciendis, minus ab. Eveniet, consequuntur in. Animi exercitationem corrupti voluptatum similique culpa facere beatae mollitia quaerat voluptatibus sapiente adipisci in soluta aliquam, officiis autem et sint labore dicta dolor libero laborum molestiae? Nihil sapiente eos itaque modi delectus!</p>
+         <button type="button" class="btnOne" onclick="closepopupOne()"> <b>Close</b></button>
+        </div>
+    <div class="popupTwo" id="popupTwo">
+        <h1 class="head">  Model 3 😍</h1>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nisi nobis ut reiciendis, minus ab. Eveniet, consequuntur in. Animi exercitationem corrupti voluptatum similique culpa facere beatae mollitia quaerat voluptatibus sapiente adipisci in soluta aliquam, officiis autem et sint labore dicta dolor libero laborum molestiae? Nihil sapiente eos itaque modi delectus!</p>
+        <button type="button"  class="btnOne" onclick="closepopupTwo()">
+            <b>Close</b> </button>
+    </div>
+   </div> 
+   <script>
+   let popup=document.getElementById("popup")
+   function openPopup(){
+    popup.classList.add("openPopup")
+   }
+   function closepopup()
+   {
+    popup.classList.remove("openPopup")
+   }
+   let popupOne=document.getElementById("popupOne")
+   function openPopupOne(){
+    popupOne.classList.add("openPopupOne")
+   }
+   function closepopupOne()
+   {
+    popupOne.classList.remove("openPopupOne")
+   }
+   let popupTwo=document.getElementById("popupTwo")
+   function openPopupTwo(){
+    popupTwo.classList.add("openPopupTwo")
+   }
+   function closepopupTwo()
+   {
+    popupTwo.classList.remove("openPopupTwo")
+   }
+    </script>
+
+</body>
+</html>
